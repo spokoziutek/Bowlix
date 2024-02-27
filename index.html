@@ -34,6 +34,10 @@
         </div>  
     </nav>
 
+    <video autoplay muted loop id="myVideo">
+        <source src="resources/video.mp4" type="video/mp4">
+    </video>
+
     <div class="container-fluid" id="header">
         <div class="container d-flex justify-content-center" id="ball-header">
             <svg width="200" height="200" viewBox="0 0 308 307" fill="none" xmlns="http://www.w3.org/2000/svg" id="bowling-ball">
@@ -61,7 +65,7 @@
                 </defs>
             </svg>
 
-            <svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg">
+            <!--<svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg">
                 <circle cx="235.387" cy="235.387" r="200" transform="rotate(173.97 235.387 235.387)" fill="url(#paint0_linear_675_111)" class="header-decor"/>
                 <defs>
                 <linearGradient id="paint0_linear_675_111" x1="101.887" y1="78.3874" x2="235.387" y2="392.387" gradientUnits="userSpaceOnUse">
@@ -99,7 +103,7 @@
                 <stop offset="1" stop-color="#499CB6" stop-opacity="0"/>
                 </linearGradient>
                 </defs>
-            </svg>
+            </svg>-->
                 
                 
         </div>
@@ -124,15 +128,15 @@
         </div>
     </div>
 
-    <div class="container" id="cards">
+    <div class="container mt-5" id="cards">
         <div class="row">
             <div class="col" id="col-img">
                 <img class="img-fluid" src="resources/pexels-anna-shvets-5952996_Easy-Resize.com.jpg" alt="tor do kręgli">
             </div>
 
-            <div class="col" id="col-text">
+            <div class="col col-text">
                 <h3 class="text-center">KRĘGIELNIA BOWLIX</h3></br>
-                <p>
+                <p class="cards-text">
                     Witamy w miejscu, gdzie radość z gry łączy się z atmosferą przyjazną dla każdego, kto kocha kręgle! Nasza kręgielnia to nie tylko zwykłe tory do gry – 
                     to przestrzeń, w której tradycja spotyka się z nowoczesnością, a entuzjazm graczy przeplata się z wyjątkowym designem.
                 </p>
@@ -140,11 +144,10 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col" id="col-text2">
-                <h3 class="text-center">KRĘGIELNIA BOWLIX</h3></br>
-                <p>
-                    Witamy w miejscu, gdzie radość z gry łączy się z atmosferą przyjazną dla każdego, kto kocha kręgle! Nasza kręgielnia to nie tylko zwykłe tory do gry – 
-                    to przestrzeń, w której tradycja spotyka się z nowoczesnością, a entuzjazm graczy przeplata się z wyjątkowym designem.
+            <div class="col col-text2">
+                <h3 class="text-center">CENNIK</h3></br>
+                <p class="cards-text">
+
                 </p>
             </div>
 
@@ -152,6 +155,67 @@
                 <img class="img-fluid" src="resources/pexels-anna-shvets-5952996_Easy-Resize.com.jpg" alt="tor do kręgli">
             </div>
         </div>
-    </div>  
+
+        <div class="row mt-5">
+            <div class="col" id="col-img">
+                <img class="img-fluid" src="resources/pexels-anna-shvets-5952996_Easy-Resize.com.jpg" alt="tor do kręgli">
+            </div>
+
+            <div class="col col-text">
+                <h3 class="text-center">GODZINY OTWARCIA</h3></br>
+                <p class="cards-text">
+
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid text-center mt-5">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2459.577272971299!2d15.476319867181385!3d51.94166376192036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470613fe8f692501%3A0xf6fee2d0c9cf4dac!2sBowling%20Club%20Zielona%20G%C3%B3ra!5e0!3m2!1spl!2spl!4v1709062897636!5m2!1spl!2spl" width="80%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="contaner-fluid pb-5" id="footer">
+        <section class="">
+            <footer class="text-center text-md-start" id="footer-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h4 class="text-uppercase">Skontaktuj się z nami</h4>
+          
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                          <p class="footer-text">anetaklepkotleta@obiad.com</p>
+                        </li>
+                        <li>
+                          <p class="footer-text">+48 123 123 123</p>
+                        </li>
+                        <li>
+                          <a href="" class="footer-text">Formularz kontaktowy</a>
+                        </li>
+                      </ul>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="footer-text">Link 1</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="footer-text">Link 2</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="footer-text">Link 3</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="footer-text">Link 4</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </footer>
+          </section>
+    </div>
 </body>
 </html>

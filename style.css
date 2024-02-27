@@ -1,3 +1,11 @@
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 50%;
+    min-height: 50%;
+}
+
 body{
     background-color: #FFFFFF;
 }
@@ -27,107 +35,16 @@ body{
 
 #header{
     background-color: #F3EFFE;
+    background-image: url(resources/video.mp4);
 }
 
 #ball-header{
     padding-top: 200px;
 }
 
-.header-decor{
-    position: absolute;
-}
-
-.decor-svg{
-    animation: floatingAnimation 10s linear infinite;
-}
-
-@keyframes floatingAnimation {
-    0% {
-        transform: translateX(200%);
-    }
-    25% {
-        transform: translateY(-20%);
-    }
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateY(150%);
-    }
-    100%{
-        transform: translateX(200%);
-    }
-}
-
-.decor-svg2{
-    animation: floatingAnimation2 10s linear infinite;
-}
-
-@keyframes floatingAnimation2 {
-    0% {
-        transform: translateX(-50%);
-    }
-    25% {
-        transform: translateY(150%);
-    }
-    50% {
-        transform: translateX(200%);
-    }
-    75% {
-        transform: translateY(-25%);
-    }
-    100%{
-        transform: translateX(-50%);
-    }
-}
-
-.decor-svg3{
-    animation: floatingAnimation3 10s linear infinite;
-}
-
-@keyframes floatingAnimation3 {
-    0% {
-        transform: translateX(-10%);
-    }
-    25% {
-        transform: translateY(150%);
-    }
-    50% {
-        transform: translateX(-60%);
-    }
-    75% {
-        transform: translateY(-75%);
-    }
-    100%{
-        transform: translateX(-10%);
-    }
-}
-
-.decor-svg4{
-    animation: floatingAnimation4 10s linear infinite;
-}
-
-@keyframes floatingAnimation4 {
-    0% {
-        transform: translateX(60%);
-    }
-    25% {
-        transform: translateY(-150%);
-    }
-    50% {
-        transform: translateX(-25%);
-    }
-    75% {
-        transform: translateY(150%);
-    }
-    100%{
-        transform: translateX(60%);
-    }
-}
-
 #bowling-ball{
     animation: rotateAnimation 1.25s ease;
-    position: absolute;
+    position: relative;
 }
 
 @keyframes rotateAnimation {
@@ -144,6 +61,7 @@ body{
 
 h1{
     animation: rotateAnimation2 1.25s ease;
+    position: relative;
 }
 
 @keyframes rotateAnimation2 {
@@ -160,6 +78,7 @@ h1{
 
 h2{
     animation: rotateAnimation3 1.25s ease;
+    position: relative;
 }
 
 @keyframes rotateAnimation3 {
@@ -191,13 +110,13 @@ h2{
 }
 
 #header-title{
-    color: #8F73F9;
+    color: white;
     font-weight: bolder;
     font-size: 4rem;
 }
 
 #header-text{
-    color: #3826A4;
+    color: white;
     font-weight: bolder;
     font-size: 1rem;
 }
@@ -227,7 +146,7 @@ h2{
 .first{
     width: 50px;
     height: 50px;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
     rotate: 45deg;
 }
 
@@ -235,15 +154,15 @@ h2{
     margin:10.5px;
     width: 25px;
     height: 25px;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
 }
 
 .third{
     margin-top: -40px;
     width: 50px;
     height: 50px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     rotate: -45deg;
 }
 
@@ -251,8 +170,8 @@ h2{
     margin-top: -40px;
     width: 50px;
     height: 50px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
     rotate: -45deg;
 }
 
@@ -267,7 +186,7 @@ h3{
     padding-top: 25%;
 }
 
-p{
+.cards-text{
     color: #3826A4;
 }
 
@@ -277,11 +196,36 @@ p{
     border-radius: 20px;
 }
 
-
-#col-text{
+.col-text{
     border-left: 3px solid #6E4AF6;
 }
 
-#col-text2{
+.col-text2{
     border-right: 3px solid #6E4AF6;
+}
+
+#footer{
+    background-color: #192136;
+    margin-top: -225px;
+    height: fit-content;
+    width: 100%;
+}
+
+#footer-padding{
+    padding-top: 300px;
+}
+
+h4{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+h5{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+.footer-text{
+    color: #FFFFFF;
+    font-weight: bold;
 }
