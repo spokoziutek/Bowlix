@@ -1,10 +1,12 @@
 body{
-    background-color: #F3EFFE;
+    background-color: #FFFFFF;
 }
 
 #navbar-container{
+    margin-top: -8px;
     padding-left: 60px;
     padding-right: 60px;
+    background-color: #F3EFFE;
 }
 
 .navbar-brand{
@@ -24,11 +26,108 @@ body{
 }
 
 #header{
-    margin-top: 200px;
+    background-color: #F3EFFE;
+}
+
+#ball-header{
+    padding-top: 200px;
+}
+
+.header-decor{
+    position: absolute;
+}
+
+.decor-svg{
+    animation: floatingAnimation 10s linear infinite;
+}
+
+@keyframes floatingAnimation {
+    0% {
+        transform: translateX(200%);
+    }
+    25% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateY(150%);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+}
+
+.decor-svg2{
+    animation: floatingAnimation2 10s linear infinite;
+}
+
+@keyframes floatingAnimation2 {
+    0% {
+        transform: translateX(-50%);
+    }
+    25% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translateX(200%);
+    }
+    75% {
+        transform: translateY(-25%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.decor-svg3{
+    animation: floatingAnimation3 10s linear infinite;
+}
+
+@keyframes floatingAnimation3 {
+    0% {
+        transform: translateX(-10%);
+    }
+    25% {
+        transform: translateY(150%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    75% {
+        transform: translateY(-75%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+
+.decor-svg4{
+    animation: floatingAnimation4 10s linear infinite;
+}
+
+@keyframes floatingAnimation4 {
+    0% {
+        transform: translateX(60%);
+    }
+    25% {
+        transform: translateY(-150%);
+    }
+    50% {
+        transform: translateX(-25%);
+    }
+    75% {
+        transform: translateY(150%);
+    }
+    100%{
+        transform: translateX(60%);
+    }
 }
 
 #bowling-ball{
-    animation: rotateAnimation 1s ease;
+    animation: rotateAnimation 1.25s ease;
+    position: absolute;
 }
 
 @keyframes rotateAnimation {
@@ -40,6 +139,54 @@ body{
     }
     100%{
         transform: translateX(0);
+    }
+}
+
+h1{
+    animation: rotateAnimation2 1.25s ease;
+}
+
+@keyframes rotateAnimation2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(60%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+h2{
+    animation: rotateAnimation3 1.25s ease;
+}
+
+@keyframes rotateAnimation3 {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#arrow{
+    animation: rotateAnimation4 1s ease;
+}
+
+@keyframes rotateAnimation4 {
+    0% {
+        transform: translateY(50%);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
 
@@ -130,6 +277,11 @@ p{
     border-radius: 20px;
 }
 
+
 #col-text{
     border-left: 3px solid #6E4AF6;
+}
+
+#col-text2{
+    border-right: 3px solid #6E4AF6;
 }
