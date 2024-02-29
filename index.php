@@ -164,7 +164,7 @@
             <div class="col-sm col-text">
                 <h3 class="text-center">GODZINY OTWARCIA</h3></br>
                 <p class="cards-text">
-
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio, modi quam neque assumenda ipsa consequatur suscipit optio repellat fugit voluptates dicta, voluptatem similique. Dignissimos laudantium odio quo deleniti ea.
                 </p>
             </div>
         </div>
