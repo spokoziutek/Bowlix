@@ -14,7 +14,7 @@ body{
     margin-top: -8px;
     padding-left: 60px;
     padding-right: 60px;
-    background-color: #F3EFFE;
+    background-color: #FFFFFF;
 }
 
 .navbar-brand{
@@ -183,7 +183,7 @@ h2{
 h3{
     color: #6E4AF6;
     font-weight: bold;
-    padding-top: 25%;
+    padding-top: 20px;
 }
 
 .cards-text{
@@ -194,14 +194,6 @@ h3{
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-}
-
-.col-text{
-    border-left: 3px solid #6E4AF6;
-}
-
-.col-text2{
-    border-right: 3px solid #6E4AF6;
 }
 
 #footer{
