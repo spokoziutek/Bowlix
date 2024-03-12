@@ -34,8 +34,11 @@ body{
 }
 
 #header{
-    background-color: #F3EFFE;
-    background-image: url(resources/video.mp4);
+    background-image: url(resources/header-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 935px;
+    position: relative;
 }
 
 #ball-header{
