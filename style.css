@@ -41,6 +41,26 @@ body{
     position: relative;
 }
 
+@media (max-width: 768px) {
+    #header {
+      background-size: contain;
+      height: 700px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+  }
+
+@media (max-width: 567px) {
+    #header {
+      background-size: contain;
+      height: 650px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+}
+
 #ball-header{
     padding-top: 200px;
 }
