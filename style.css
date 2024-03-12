@@ -219,6 +219,12 @@ h3{
     border-radius: 20px;
 }
 
+@media (max-width: 991px) {
+    #col-img {
+        display: none;
+    }
+}
+
 #footer{
     background-color: #192136;
     margin-top: -225px;

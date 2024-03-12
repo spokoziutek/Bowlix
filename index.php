@@ -28,7 +28,7 @@
                         <a class="nav-link" href="logout.php">Logowanie</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn" id="btn-reservation">Rezerwuj tor</button>
+                        <button class="btn mb-2" id="btn-reservation">Rezerwuj tor</button>
                     </li>
                 </ul>
             </div>
@@ -139,39 +139,39 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-sm-12 col-lg-6 col-text2">
-                <h3 class="text-center">CENNIK</h3></br>
-                <table class="table">
-                    <thead>
-                      <tr>
-                        <th scope="col">Dzień tygodnia</th>
-                        <th scope="col">w godz. 12:00-16:00</th>
-                        <th scope="col">w godz. 16:00-24:00</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Pon,Wt,Śr,Czw</th>
-                        <td>80zł</td>
-                        <td>80zł</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Piątek</th>
-                        <td>80zł</td>
-                        <td>120zł</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Weekend</th>
-                        <td>120zł</td>
-                        <td>120zł</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Święta</th>
-                        <td>120zł</td>
-                        <td>120zł</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          <div class="col-sm-12 col-lg-6 col-text2">
+              <h3 class="text-center">CENNIK</h3></br>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Dzień tygodnia</th>
+                    <th scope="col">w godz. 12:00-16:00</th>
+                    <th scope="col">w godz. 16:00-24:00</th>
+                  </tr>
+                  </thead>                      
+                  <tbody>
+                    <tr>
+                      <th scope="row">Pon,Wt,Śr,Czw</th>
+                      <td>80zł</td>
+                      <td>80zł</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Piątek</th>
+                      <td>80zł</td>
+                      <td>120zł</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Weekend</th>
+                      <td>120zł</td>
+                      <td>120zł</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Święta</th>
+                      <td>120zł</td>
+                      <td>120zł</td>
+                    </tr>
+                </tbody>
+              </table>
             </div>
 
             <div class="col-sm-12 col-lg-6" id="col-img">
