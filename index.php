@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="register.html">Rejestracja</a>
+                        <a class="nav-link" href="register.php">Rejestracja</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="logout.php">Logowanie</a>
