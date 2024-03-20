@@ -1,0 +1,252 @@
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+#navbar-container{
+    margin-top: -8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #FFFFFF;
+}
+
+.navbar-brand{
+    color: #6E4AF6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #6E4AF6;
+    font-weight: bold;
+}
+
+#btn-reservation{
+    background-color: #6E4AF6;
+    color: #FFFFFF;
+}
+
+#header{
+    background-image: url(resources/header-photo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 935px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    #header {
+      background-size: contain;
+      height: 700px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+}
+
+@media (max-width: 567px) {
+    #header {
+      background-size: contain;
+      height: 650px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+}
+
+#ball-header{
+    padding-top: 200px;
+}
+
+#bowling-ball{
+    animation: rotateAnimation 1.25s ease;
+    position: relative;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+h1{
+    animation: rotateAnimation2 1.25s ease;
+    position: relative;
+}
+
+@keyframes rotateAnimation2 {
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(60%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+h2{
+    animation: rotateAnimation3 1.25s ease;
+    position: relative;
+}
+
+@keyframes rotateAnimation3 {
+    0% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(-60%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+#arrow{
+    animation: rotateAnimation4 1s ease;
+}
+
+@keyframes rotateAnimation4 {
+    0% {
+        transform: translateY(50%);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#header-title{
+    color: white;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+#header-text{
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.button{
+    width: min-content;
+}
+
+.button:hover{
+    transition: 1000ms;
+    scale: 110%;
+    cursor: pointer;
+    .third{
+        transition: 50000ms;
+        transform: translate(-25px,25px);
+    }
+    .forth{
+        transition: 50000ms;
+        transform: translate(-30px,30px);
+    }
+}
+
+#arrow{
+    padding-bottom: 250px;
+}
+
+.first{
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid white;
+    rotate: 45deg;
+}
+
+.second{
+    margin:10.5px;
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid white;
+}
+
+.third{
+    margin-top: -40px;
+    width: 50px;
+    height: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    rotate: -45deg;
+}
+
+.forth{
+    margin-top: -40px;
+    width: 50px;
+    height: 50px;
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    rotate: -45deg;
+}
+
+#cards{
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+h3{
+    color: #6E4AF6;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.cards-text{
+    color: #3826A4;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    #col-img {
+        display: none;
+    }
+}
+
+#footer{
+    background-color: #192136;
+    margin-top: -225px;
+    height: fit-content;
+    width: 100%;
+}
+
+#footer-padding{
+    padding-top: 300px;
+}
+
+h4{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+h5{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+.footer-text{
+    color: #FFFFFF;
+    font-weight: bold;
+}

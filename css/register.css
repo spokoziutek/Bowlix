@@ -1,0 +1,109 @@
+body{
+    background-color: #F3EFFE;
+}
+
+/* NAVBAR */
+#navbar-container{
+    margin-top: -8px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #F3EFFE;
+}
+
+.navbar-brand{
+    color: #6E4AF6;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-link{
+    color: #6E4AF6;
+    font-weight: bold;
+}
+
+#btn-reservation{
+    background-color: #6E4AF6;
+    color: #FFFFFF;
+}
+/* NAVBAR */
+
+/* FORMULARZ REJESTRACYJNY */
+#register-container{
+    padding: 25px;
+    width: 50%;
+    margin-top: 200px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h2{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+.form-control{
+    width: 50%;
+    color: black;
+    border-radius: 50px;
+}
+ 
+.form-group{
+    padding-left: 5%;
+}
+
+#submit-btn{
+    margin-top: 20%;
+    width: 50%;
+    background-color: #6E4AF6;
+    border: none;
+    font-weight: bolder;
+}
+
+#left-side{
+    border-right: 3px solid #6E4AF6;
+}
+
+@media (max-width: 991px){
+    #left-side{
+        border-right: none;
+    }
+    .form-control{
+        width: 100%;
+    }
+    #submit-btn{
+        margin-top: -45px;
+    }
+}
+/* FORMULARZ REJESTRACYJNY */
+
+/* STOPKA*/
+#footer{
+    background-color: #192136;
+    margin-top: -125px;
+    height: fit-content;
+    width: 100%;
+}
+
+#footer-padding{
+    padding-top: 300px;
+}
+
+h4{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+h5{
+    color: #6E4AF6;
+    font-weight: bolder;
+}
+
+.footer-text{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/* STOPKA*/
