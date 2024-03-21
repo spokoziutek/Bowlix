@@ -77,6 +77,10 @@ h2{
     #submit-btn{
         margin-top: -45px;
     }
+
+    #register-container{
+        width: 100%;
+    }
 }
 /* FORMULARZ REJESTRACYJNY */
 
