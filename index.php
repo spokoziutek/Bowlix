@@ -26,7 +26,7 @@
                         <a class="nav-link" href="register.php">Rejestracja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Logowanie</a>
+                        <a class="nav-link" href="login.php">Logowanie</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn mb-2" id="btn-reservation">Rezerwuj tor</button>
@@ -64,46 +64,6 @@
                 </linearGradient>
                 </defs>
             </svg>
-
-            <!--<svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg">
-                <circle cx="235.387" cy="235.387" r="200" transform="rotate(173.97 235.387 235.387)" fill="url(#paint0_linear_675_111)" class="header-decor"/>
-                <defs>
-                <linearGradient id="paint0_linear_675_111" x1="101.887" y1="78.3874" x2="235.387" y2="392.387" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#5299EC"/>
-                <stop offset="1" stop-color="#499CB6" stop-opacity="0"/>
-                </linearGradient>
-                </defs>
-            </svg>
-
-            <svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg2">
-                <circle cx="235.387" cy="235.387" r="150" transform="rotate(235.387 235.387 173.97)" fill="url(#paint0_linear_675_111)" class="header-decor"/>
-                <defs>
-                <linearGradient id="paint0_linear_675_111" x1="101.887" y1="78.3874" x2="235.387" y2="392.387" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#5299EC"/>
-                <stop offset="1" stop-color="#499CB6" stop-opacity="0"/>
-                </linearGradient>
-                </defs>
-            </svg>
-
-            <svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg3">
-                <circle cx="235.387" cy="235.387" r="125" transform="rotate(235.387 235.387 173.97)" fill="url(#paint0_linear_675_111)" class="header-decor"/>
-                <defs>
-                <linearGradient id="paint0_linear_675_111" x1="101.887" y1="78.3874" x2="235.387" y2="392.387" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#5299EC"/>
-                <stop offset="1" stop-color="#499CB6" stop-opacity="0"/>
-                </linearGradient>
-                </defs>
-            </svg>
-
-            <svg width="235.387" height="235.387" viewBox="0 0 471 471" fill="none" xmlns="http://www.w3.org/2000/svg" class="decor-svg4">
-                <circle cx="235.387" cy="235.387" r="175" transform="rotate(235.387 235.387 173.97)" fill="url(#paint0_linear_675_111)" class="header-decor"/>
-                <defs>
-                <linearGradient id="paint0_linear_675_111" x1="101.887" y1="78.3874" x2="235.387" y2="392.387" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#5299EC"/>
-                <stop offset="1" stop-color="#499CB6" stop-opacity="0"/>
-                </linearGradient>
-                </defs>
-            </svg>-->
         </div>
 
         <div class="container d-flex justify-content-center">
@@ -114,7 +74,7 @@
             <h2 id="header-text">KRĘGLE DLA WSZYSTKICH</h2>
         </div>
 
-        <a href="#cards"><div class="container pt-5 d-flex justify-content-center" id="arrow">
+        <a id="scroll" href="#cards"><div class="container pt-5 d-flex justify-content-center" id="arrow">
             <div class="button">
                 <div class="first">
                     <div class="second"></div>
@@ -139,7 +99,10 @@
                 <h3 class="text-center">KRĘGIELNIA BOWLIX</h3></br>
                 <p class="cards-text text-center">
                     Witamy w miejscu, gdzie radość z gry łączy się z atmosferą przyjazną dla każdego, kto kocha kręgle! Nasza kręgielnia to nie tylko zwykłe tory do gry – 
-                    to przestrzeń, w której tradycja spotyka się z nowoczesnością, a entuzjazm graczy przeplata się z wyjątkowym designem.
+                    to przestrzeń, w której tradycja spotyka się z nowoczesnością, a entuzjazm graczy przeplata się z wyjątkowym designem.</br>
+                    Oprócz codziennych rozgrywek dla wszystkich grup wiekowych, nasza kręgielnia jest również dumnym gospodarzem dwóch wyjątkowych lig: Ligi Seniorów i Ligi Trójek.
+                    Zapraszamy więc wszystkich, zarówno seniorów pragnących aktywnie spędzać czas, jak i grupy przyjaciół szukających ekscytujących wyzwań, do udziału w naszych ligach.
+                    W naszej kręgielni każdy znajdzie coś dla siebie, a radość z gry będzie łączyć się z przyjazną atmosferą i niezapomnianymi chwilami spędzonymi w gronie pasjonatów kręgli.
                 </p>
             </div>
         </div>
@@ -181,20 +144,39 @@
             </div>
 
             <div class="col-sm-12 col-lg-6" id="col-img">
-                <img class="img-fluid" src="resources/pexels-anna-shvets-5952996_Easy-Resize.com.jpg" alt="tor do kręgli">
+                <img class="img-fluid" src="resources/pexels-anna-shvets-5952942.jpg" alt="tor do kręgli">
             </div>
         </div>
 
         <div class="row mt-5">
             <div class="col-sm-12 col-lg-6" id="col-img">
-                <img class="img-fluid" src="resources/pexels-anna-shvets-5952996_Easy-Resize.com.jpg" alt="tor do kręgli">
+                <img class="img-fluid" src="resources/pexels-pavel-danilyuk-7429604.jpg" alt="tor do kręgli">
             </div>
 
             <div class="col-sm-12 col-lg-6 col-text">
                 <h3 class="text-center">GODZINY OTWARCIA</h3></br>
-                <p class="cards-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt distinctio, modi quam neque assumenda ipsa consequatur suscipit optio repellat fugit voluptates dicta, voluptatem similique. Dignissimos laudantium odio quo deleniti ea.
-                </p>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Dzień tygodnia</th>
+                      <th scope="col">Godziny otwarcia</th>
+                    </tr>
+                    </thead>                      
+                    <tbody>
+                      <tr>
+                        <th scope="row">Poniedziałek-Czwartek</th>
+                        <td>12:00 - 24:00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Piątek-Sobota</th>
+                        <td>12:00 - 24:00</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Niedziela</th>
+                        <td>14:00 - 24:00</td>
+                      </tr>
+                  </tbody>
+                </table>
             </div>
         </div>
         <div class="row mt-5">
@@ -234,20 +216,20 @@
                   </div>
 
                   <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Links</h5>
+                    <h5 class="text-uppercase">Linki</h5>
           
                     <ul class="list-unstyled mb-0">
                       <li>
-                        <a href="#!" class="footer-text">Link 1</a>
+                        <a href="#!" class="footer-text">Facebook</a>
                       </li>
                       <li>
-                        <a href="#!" class="footer-text">Link 2</a>
+                        <a href="#!" class="footer-text">Instagram</a>
                       </li>
                       <li>
-                        <a href="#!" class="footer-text">Link 3</a>
+                        <a href="#!" class="footer-text">YouTube</a>
                       </li>
                       <li>
-                        <a href="#!" class="footer-text">Link 4</a>
+                        <a href="#!" class="footer-text">Twitter</a>
                       </li>
                     </ul>
                 </div>

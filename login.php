@@ -6,8 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/register.css">
-    <title>Rejestracja</title>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Logowanie</title>
 </head>
 <body>
     
@@ -23,10 +23,10 @@
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rejestracja</a>
+                        <a class="nav-link" href="register.php">Rejestracja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">Logowanie</a>
+                        <a class="nav-link" href="#">Logowanie</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn mb-2" id="btn-reservation">Rezerwuj tor</button>
@@ -41,32 +41,21 @@
     <div class="container" id="register-container">
         <div class="row">
             <div class="col-sm-12 col-lg-6" id="left-side">
-                <h2>Rejestracja</h2></br>
+                <h2>Logowanie</h2></br>
                 <form>
-                    <div class="form-group pb-3">
-                      <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Imię">
-                    </div>
-                    <div class="form-group pb-3">
-                      <input type="name" class="form-control" id="secondName" placeholder="Nazwisko">
-                    </div>
                     <div class="form-group pb-3">
                         <input type="e-mail" class="form-control" id="Email" placeholder="E-Mail">
                     </div>
                     <div class="form-group pb-3">
-                        <input type="phone" class="form-control" id="telephone" placeholder="Numer Telefonu">
-                    </div>
-                    <div class="form-group pb-3">
                         <input type="password" class="form-control" id="password" placeholder="Hasło">
                     </div>
-                    <div class="form-group pb-3">
-                        <input type="password" class="form-control" id="repeat-password" placeholder="Powtórz hasło">
-                    </div>
+                    <a href="#" class="m-4">Przypomnij hasło</a>
                 </div>
 
                 <div class="col-sm-12 col-lg-6 text-center pt-5">
-                    <button type="submit" class="btn btn-primary" id="submit-btn">Zarejestruj</button>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Zaloguj</button>
                 </form>
-                <h4 class="pt-2">Masz już konto? <a href="#">Zaloguj się</a></h4>
+                <h4 class="pt-2">Nie masz konta?<a href="#"> Zarejestruj się</a></h4>
                 </div>
             </div>
         </div>

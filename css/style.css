@@ -34,7 +34,7 @@ body{
 }
 
 #header{
-    background-image: url(resources/header-photo.jpg);
+    background-image: url(/resources/header-photo.jpg);
     background-size: cover;
     background-position: center;
     height: 935px;
