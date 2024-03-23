@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 // Dane do połączenia z bazą
 $db_host = 'eu-cluster-west-01.k8s.cleardb.net';  // Host bazy danych (często localhost)
 $db_name = 'heroku_3d9b81ee31eb9ad';     // Nazwa bazy danych
@@ -12,4 +12,6 @@ try {
 } catch (PDOException $e) {
     echo "Błąd połączenia z bazą danych: " . $e->getMessage();
     exit(); // Wyświetlanie błędu i przerywanie dalszego wykonywania
-} -->
+}
+?>
+
