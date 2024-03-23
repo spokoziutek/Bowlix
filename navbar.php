@@ -54,3 +54,4 @@ function getRegisterLink() {
         return '<a class="nav-link" href="register.php">Rejestracja</a>';
     }
 }
+?>
