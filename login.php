@@ -1,3 +1,7 @@
+<?php
+require_once 'navbar.php';
+displayNavbar();
+?>
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
@@ -12,7 +16,7 @@
 <body>
     
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md fixed-top">
+    <!-- <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid" id="navbar-container">
             <a class="navbar-brand" href="index.php">Bowlix</a>
                             
@@ -34,7 +38,7 @@
                 </ul>
             </div>
         </div>  
-    </nav>
+    </nav> -->
     <!-- NAVBAR -->
 
     <!-- FORMULARZ REJESTRACYJNY -->
