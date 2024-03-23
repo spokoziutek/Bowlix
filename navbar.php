@@ -18,7 +18,7 @@ function displayNavbar() {
                     '.getRegisterLink() .'
                     </li>
                     <li class="nav-item">
-                        '.getLoginLogoutLink() .'
+                    '.getLoginLogoutLink() .'
                     </li>
                     <li class="nav-item">
                     '.getProfileLink() .'

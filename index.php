@@ -1,7 +1,4 @@
-<?php
-require_once 'navbar.php';
-displayNavbar();
-?>
+
 
 <!DOCTYPE html>
 <html lang="pl-PL">
