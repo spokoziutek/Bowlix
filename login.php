@@ -2,31 +2,31 @@
 require_once 'navbar.php';
 displayNavbar();
 
-// Sprawdź czy formularz został wysłany
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Tutaj możesz dodać logikę weryfikacji logowania
-    // Na przykład sprawdzenie czy podane dane są poprawne
-    // Poniżej znajduje się tylko prosta wersja weryfikacji, która nie jest bezpieczna i wymaga ulepszenia.
+// // Sprawdź czy formularz został wysłany
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     // Tutaj możesz dodać logikę weryfikacji logowania
+//     // Na przykład sprawdzenie czy podane dane są poprawne
+//     // Poniżej znajduje się tylko prosta wersja weryfikacji, która nie jest bezpieczna i wymaga ulepszenia.
 
-    // Pobranie danych z formularza
-    $email = $_POST['Email'];
-    $password = $_POST['password'];
+//     // Pobranie danych z formularza
+//     $email = $_POST['Email'];
+//     $password = $_POST['password'];
 
-    // Tutaj możesz dodać kod weryfikacji danych logowania, na przykład sprawdzenie w bazie danych
+//     // Tutaj możesz dodać kod weryfikacji danych logowania, na przykład sprawdzenie w bazie danych
 
-    // Przykładowa weryfikacja - przykładowe dane użytkownika
-    $valid_email = "przykladowy@mail.com";
-    $valid_password = "przykładweHasło";
+//     // Przykładowa weryfikacja - przykładowe dane użytkownika
+//     $valid_email = "przykladowy@mail.com";
+//     $valid_password = "przykładweHasło";
 
-    // Prosta weryfikacja
-    if ($email == $valid_email && $password == $valid_password) {
-        // Jeśli dane są poprawne, możesz przekierować użytkownika na inną stronę lub wykonać inne operacje
-        echo "<script>alert('Zalogowano pomyślnie!');</script>";
-    } else {
-        // Jeśli dane są niepoprawne, możesz wyświetlić odpowiedni komunikat lub przekierować użytkownika na stronę logowania
-        echo "<script>alert('Niepoprawny e-mail lub hasło.');</script>";
-    }
-}
+//     // Prosta weryfikacja
+//     if ($email == $valid_email && $password == $valid_password) {
+//         // Jeśli dane są poprawne, możesz przekierować użytkownika na inną stronę lub wykonać inne operacje
+//         echo "<script>alert('Zalogowano pomyślnie!');</script>";
+//     } else {
+//         // Jeśli dane są niepoprawne, możesz wyświetlić odpowiedni komunikat lub przekierować użytkownika na stronę logowania
+//         echo "<script>alert('Niepoprawny e-mail lub hasło.');</script>";
+//     }
+// }
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
