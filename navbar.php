@@ -3,7 +3,6 @@
 
 function displayNavbar() {
     echo '
-    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid" id="navbar-container">
             <a class="navbar-brand" href="index.php">Bowlix</a>
