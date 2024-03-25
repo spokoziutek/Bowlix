@@ -2,7 +2,43 @@
 require_once 'config.php';
 require_once 'navbar.php';
 displayNavbar();
+define('DB_SERVER', 'localhost');
+define('DB_NAME', 'bowlix');
+define('DB_USER', 'root');
+define('DB_PASS', '');
 
+// połączenie mysql
+$conn = new PDO("mysql:host=".DB_SERVER.";dbname=".DB_NAME.";charset=utf8",DB_USER,DB_PASS);
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn->query('SET NAMES UTF8;');
+$conn->query('SET CHARACTER SET UTF8;');
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $email = $_POST["email"];
+    $haslo = $_POST["haslo"];
+
+    // Zapytanie SQL sprawdzające, czy istnieje użytkownik o podanym adresie e-mail i haśle
+    $sql = "SELECT * FROM użytkownik WHERE email = :email AND haslo = :haslo";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':haslo', $haslo);
+    $stmt->execute();
+
+    
+    // Sprawdź, czy zapytanie zwróciło dokładnie jeden rekord
+    if($stmt->rowCount() == 1){
+        // Użytkownik został zalogowany poprawnie, zapisz jego adres e-mail do sesji
+        $_SESSION['email'] = $email;
+        // Przekieruj użytkownika na stronę główną lub inną stronę po zalogowaniu
+        header("Location: index.php");
+        exit;
+    } else {
+        // Jeśli nie znaleziono użytkownika o podanym adresie e-mail i haśle, wyświetl komunikat o błędzie
+        echo '<div class="alert alert-danger" role="alert">Błędne dane logowania. Spróbuj ponownie.</div>';
+    }
+}
+
+// Zamykanie połączenia z bazą danych
+$conn = null;
 ?>
 <!DOCTYPE html>
 <html lang="pl-PL">
@@ -22,28 +58,12 @@ displayNavbar();
         <div class="row">
             <div class="col-sm-12 col-lg-6" id="left-side">
                 <h2>Logowanie</h2></br>
-                    <?php
-                    if($_SERVER['REQUEST_METHOD'] === 'POST'){
-                        $email = $_POST['Email'] ?? '';
-                        $password = $_POST['password'] ?? '';
-
-                        if (checkLoginData($email, $password)){
-                            $_SESSION['Email'] = true;
-                            $_SESSION['Email'] = $email;
-                            header("Location: profile.php");
-                            exit();
-                        }
-                        else{
-                            echo '<div> Nieprawidłowe dane logowania</div>';
-                        }
-                    }
-                    ?>
                 <form method="post">
                     <div class="form-group pb-3">
-                        <input name="Email" type="e-mail" class="form-control" id="Email" placeholder="E-Mail">
+                        <input name="email" type="e-mail" class="form-control" id="Email" placeholder="E-Mail">
                     </div>
                     <div class="form-group pb-3">
-                        <input name="password" type="password" class="form-control" id="password" placeholder="Hasło">
+                        <input name="haslo" type="password" class="form-control" id="password" placeholder="Hasło">
                     </div>
                     <a href="#" class="m-4">Przypomnij hasło</a>
                 </div>

@@ -29,19 +29,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $stmtEmailExist->bindParam(':email',$email);
         $stmtEmailExist->execute();
         $ifEmailExist = $stmtEmailExist->fetch(PDO::FETCH_ASSOC);
-
-        //telefon
-        $sqlNumberExist = "SELECT Count(*) as count FROM użytkownik WHERE nr_tel = :nr_tel";
-        $stmtNumberExist = $conn->prepare($sqlNumberExist);
-        $stmtNumberExist->bindParam(':nr_tel',$nr_tel);
-        $stmtNumberExist->execute();
-        $ifNumberExist = $stmtNumberExist->fetch(PDO::FETCH_ASSOC);
-
+        
 
         if ($ifEmailExist['count'] > 0 ) {
             echo '<div class="alert alert-danger" role="alert">Konto z podanym adresem już istnieje.</div>';
-        }else if($ifNumberExist['count'] > 0){
-            echo '<div class="alert alert-danger" role="alert">Konto z podanym numerem telefonu już istnieje.</div>';
         }else{
             //przypisanie parametrow do zmiennych
             $stmt = $conn->prepare($sql);

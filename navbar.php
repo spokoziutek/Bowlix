@@ -4,7 +4,7 @@ require_once 'config.php';
 
 function displayNavbar() {
     echo '
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav class="navbar navbar-expand-md">
         <div class="container-fluid" id="navbar-container">
             <a class="navbar-brand" href="index.php">Bowlix</a>
                             
