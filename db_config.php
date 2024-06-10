@@ -1,9 +1,9 @@
 <?php
 // Dane do połączenia z bazą
-$db_host = 'eu-cluster-west-01.k8s.cleardb.net';  // Host bazy danych (często localhost)
-$db_name = 'heroku_3d9b81ee31eb9ad';     // Nazwa bazy danych
-$db_user = 'b1bf96cb456b47'; // Nazwa użytkownika
-$db_password = '5a731034';  // Hasło
+$db_host = ' ';  // Host bazy danych (często localhost)
+$db_name = ' ';     // Nazwa bazy danych
+$db_user = ' '; // Nazwa użytkownika
+$db_password = ' ';  // Hasło
 
 // Nawiązanie połączenia
 try {
